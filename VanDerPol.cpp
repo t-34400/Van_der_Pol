@@ -19,7 +19,7 @@ void VanDerPol::stepForward(int n)
 	double nextPosition{};
 	double nextVelocity{};
 
-	for (int count; count < n; ++count)
+	for (int count{ 0 }; count < n; ++count)
 	{
 		nextPosition = getNextPostion();
 		nextVelocity = getNextVelocity();
